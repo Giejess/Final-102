@@ -1,0 +1,90 @@
+body {
+            font-family: sans-serif;
+            background-color: #1a1a2e; /* Dark background color */
+            color: #ffffff; /* White text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+
+.chat-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    padding: 20px; /* Reduced padding for better use of space */
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc; /* Changed to a full border for consistency */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Improved font for readability */
+    font-size: 14px; /* Set a base font size */
+    color: #333; /* Darker text color for contrast */
+}
+
+/* Custom scrollbar for WebKit browsers */
+.chat-box::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: #ccc; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded scrollbar thumb */
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+    background: #aaa; /* Darker thumb on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .chat-box {
+        height: 200px; /* Adjust height for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+.chat-message {
+    margin: 5px 0;
+}
+
+.user {
+    text-align: right;
+}
+
+.bot {
+    text-align: left;
+}
+
+input[type="text"] {
+    border: none;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    flex: 1;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 0 8px 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
